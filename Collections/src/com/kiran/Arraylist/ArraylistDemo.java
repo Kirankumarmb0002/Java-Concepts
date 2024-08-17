@@ -1,6 +1,8 @@
 package com.kiran.Arraylist;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArraylistDemo {
 
@@ -12,6 +14,16 @@ public class ArraylistDemo {
 		alist.add(new Integer(20));
 		
 		System.out.println(alist);
+		
+		ListIterator<Integer> iter=alist.listIterator();
+		
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+		System.out.println(alist);
+		while(iter.hasPrevious()) {
+			System.out.println(iter.previous());
+		}
 	}
 
 	

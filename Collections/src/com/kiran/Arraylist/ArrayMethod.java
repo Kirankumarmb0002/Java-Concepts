@@ -9,7 +9,7 @@ public class ArrayMethod {
 
 	public static void main(String[] args) {
 		List<Integer> alist = new ArrayList<>();
-
+ 
 		for (int i = 10; i <= 100; i = i + 10) {
 			alist.add(i);
 		}
